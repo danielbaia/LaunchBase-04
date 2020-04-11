@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  Resolução de Desafios e Projetos do LaunchBase Bootcamp 04
+  Desafios e Projetos do LaunchBase Bootcamp 04
 </h3>
 
 <p align="center">
@@ -12,12 +12,12 @@
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
   </a>
 
-  <a href="https://github.com/chicodiegomoreira/launchbase-04/blob/master/LICENSE" >
+  <a href="" >
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
   
-  <a href="https://www.linkedin.com/in/chicodiegomoreira/" >
-    <img alt="My Linkedin" src="https://img.shields.io/badge/-chicodiegomoreira-%230077B5?style=social&logo=linkedin">
+  <a href="https://www.linkedin.com/in/danielbaiaamaral/" >
+    <img alt="My Linkedin" src="https://img.shields.io/badge/-danielbaiaamaral-%230077B5?style=social&logo=linkedin">
   </a>
 
 </p>
