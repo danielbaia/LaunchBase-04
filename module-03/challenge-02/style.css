@@ -7,10 +7,36 @@
 :root {
     --color-black: #060606;
     --color-rocket: #715AC1;
+    --color-green: #50fa7b;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--color-rocket);
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--color-rocket);
+}
+
+header div {
+    padding: 30px;
+    text-align: center;
+}
+
+header div a {
+    margin: 0 16px;
+    padding: 10px 5px;
+    color: white;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+header div a:hover {
+    opacity: .8;
+    color: var(--color-green);
 }
 
 .sobre {
@@ -21,7 +47,8 @@ body {
 .sobre img {
     height: 200px;
     border-radius: 50%;
-    border: var(--color-black) 1px solid;
+    border: white 1px solid;
+    margin-bottom: 20px;
 }
 
 .sobre h1 {
@@ -58,11 +85,12 @@ body {
     margin-bottom: 10px;
     padding: 10px 10px;
     font-size: 1.125em;
-    color: var(--color-rocket);
+    color: white;
     display: inline-block;
 }
 
 .links a:hover {
     text-decoration: underline;
     opacity: 0.8;
+    color: var(--color-green);
 }
