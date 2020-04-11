@@ -30,12 +30,12 @@
 
 ## Semana 01 - Módulos
 
-- [01 - Introdução à programação WEB](https://github.com/chicodiegomoreira/launchbase-04/blob/master/docs/semana01/modulo01/README.md)
-- [02 - Iniciando no Front-end](https://github.com/chicodiegomoreira/launchbase-04/blob/master/docs/semana01/modulo02/README.md)
+- [01 - Introdução à programação WEB]()
+- [02 - Iniciando no Front-end]()
 ---
 ## Foodfy
-- Desafio: Construção de um site completo para uma empresa de receitas chamada [Foodfy](https://github.com/chicodiegomoreira/launchbase-04-foodfy).
+- Desafio: Construção de um site completo para uma empresa de receitas chamada [Foodfy]().
 
 ## Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/chicodiegomoreira/launchbase-04/blob/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE]() para mais detalhes.
