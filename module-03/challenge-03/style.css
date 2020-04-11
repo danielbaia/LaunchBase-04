@@ -5,21 +5,23 @@
 }
 
 :root {
-    --color-black: #060606;
+    --color-black: #0B0A0C;
+    --color-header: #111015;
     --color-rocket: #715AC1;
     --color-rocket-black: #846ddf;
     --color-green: #50fa7b;
+    --color-card: #2D2B32;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--color-rocket);
+    background: var(--color-black);
     color: white;
 }
 
 header {
     padding: 30px;
-    background: #846ddf;
+    background: var(--color-header);
     opacity: 0.8;
 }
 
@@ -95,4 +97,46 @@ header div a:hover {
     text-decoration: underline;
     opacity: 0.8;
     color: var(--color-green);
+}
+
+.wrapper {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/*=====CARD CONTEUDOS=*/
+
+.cards-conteudos {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-conteudo {
+    background: var(--color-card);
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+
+.card-titulo {
+    text-align: center;
+}
+
+.card-img img {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--color-card);
+}
+
+.card-titulo,
+.card-info {
+    padding: 16px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
