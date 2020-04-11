@@ -7,7 +7,7 @@
 :root {
     --color-black: #060606;
     --color-rocket: #715AC1;
-    --color-rocket-black: #7155DD;
+    --color-rocket-black: #846ddf;
     --color-green: #50fa7b;
 }
 
@@ -19,8 +19,8 @@ body {
 
 header {
     padding: 30px;
-    background-color: var(--color-rocket);
-    border-bottom: #7155DD 3px solid;
+    background: #846ddf;
+    opacity: 0.8;
 }
 
 header div {
