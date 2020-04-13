@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -33,7 +34,7 @@
     </div>
 
     <section class="cards-conteudos">
-        <div class="card-conteudo">
+        <div class="card-conteudo" id="starter">
             <div class="card-img">
                 <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="Curso Starter">
             </div>
@@ -41,12 +42,12 @@
                 <h2>Starter</h2>
             </div>
             <div class="card-info">
-                <p class="info-modulos"> 12 modulos</p>
-                <p class="card-price">FREE</p>
+                <p class="info-modulos"> 5 modulos</p>
+                <p class="info-price">FREE</p>
             </div>
 
         </div>
-        <div class="card-conteudo">
+        <div class="card-conteudo" id="launchbase">
             <div class="card-img">
                 <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt=" Curso LaunchBase">
             </div>
@@ -55,10 +56,10 @@
             </div>
             <div class="card-info">
                 <p class="info-modulos"> 12 modulos</p>
-                <p class="card-price">FREE</p>
+                <p class="info-price">PAID</p>
             </div>
         </div>
-        <div class="card-conteudo">
+        <div class="card-conteudo" id="gostack">
             <div class="card-img">
                 <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt=" Curso GoStack">
             </div>
@@ -66,11 +67,31 @@
                 <h2>GoStack</h2>
             </div>
             <div class="card-info">
-                <p class="info-modulos"> 12 modulos</p>
-                <p class="card-price">FREE</p>
+                <p class="info-modulos"> 16 modulos</p>
+                <p class="info-price">PAID</p>
             </div>
         </div>
     </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="icons-modal">
+                <a href="" class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+
+                <a href="" class="maximize-modal">
+                    <i class="material-icons">maximize</i>
+                </a>
+            </div>
+
+            <div class="modal-content">
+                <iframe src="https://rocketseat.com.br/starter" frameborder="0"></iframe>
+
+            </div>
+
+        </div>
+    </div>
 
 
 </body>
