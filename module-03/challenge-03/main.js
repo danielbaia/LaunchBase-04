@@ -3,8 +3,10 @@ const cards = document.querySelectorAll('.card-conteudo');
 
 for (const card of cards) {
     card.addEventListener('click', function() {
+        const idFrame = card.getAttribute('id');
+
         modalOverlay.classList.add('active');
-        modalOverlay.querySelector('iframe').src = 'https://www.rocketseat.com.br/';
+        modalOverlay.querySelector('iframe').src = `https://www.rocketseat.com.br/${idFrame}`;
     });
 }
 
@@ -17,5 +19,10 @@ closeModal.addEventListener('click', function() {
 const maximizeModal = document.querySelector('.maximize-modal');
 maximizeModal.addEventListener('click', function() {
     const modal = document.querySelector('.modal');
-    modal.classList.add('maximize');
+    if (modal.classList.contains('maximize')) {
+        modal.classList.remove('maximize');
+    } else {
+        modal.classList.add('maximize');
+    }
+
 });
