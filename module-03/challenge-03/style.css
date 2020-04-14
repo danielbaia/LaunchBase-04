@@ -169,35 +169,32 @@ header div a:hover {
 }
 
 .modal {
-    background: white;
-    width: 90%;
-    height: 90%;
-    margin: 5VH auto;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    margin: 10VH auto;
     position: relative;
 }
 
-
-/*
-
-.modal .close-modal {
-    color: var(--color-black);
+.modal .buttons-modal {
+    color: black;
     position: absolute;
     right: 10px;
     top: 5px;
     cursor: pointer;
 }
-*/
 
-.modal .icons-modal {
-    color: var(--color-black);
-    position: absolute;
-    right: 20px;
-    top: 5px;
-    cursor: pointer;
-}
-
-.modal-content iframe {
-    height: 90%;
+iframe {
+    height: 80%;
     width: 100%;
     position: absolute;
+    top: 5%;
+}
+
+.modal-maximize {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5VH auto;
+    position: relative;
 }
