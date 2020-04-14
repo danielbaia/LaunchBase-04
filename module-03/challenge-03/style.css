@@ -119,6 +119,7 @@ header div a:hover {
     background: var(--color-card);
     padding: 32px 16px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .card-titulo {
