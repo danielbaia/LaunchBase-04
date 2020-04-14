@@ -166,6 +166,8 @@ header div a:hover {
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -188,13 +190,18 @@ iframe {
     height: 80%;
     width: 100%;
     position: absolute;
-    top: 5%;
+    top: 8%;
 }
 
-.modal-maximize {
+.maximize {
     background-color: white;
     width: 90%;
     height: 90%;
     margin: 5VH auto;
     position: relative;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
 }
