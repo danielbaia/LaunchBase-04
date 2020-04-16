@@ -2,7 +2,7 @@
 //e envia a media das notas
 
 
-const aluno1= "DANIEL";
+const aluno1 = "DANIEL";
 const aluno2 = "Joao";
 
 
@@ -16,4 +16,3 @@ const nota01 = 8.9;
 
 console.log(typeof nota01);
 console.log(typeof aluno1);
-
