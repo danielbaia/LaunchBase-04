@@ -48,7 +48,10 @@ header div a:hover {
 }
 
 .sobre img {
-    height: 260px;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    background: var(--color-rocket);
     border-radius: 50%;
     border: white 1px solid;
     margin-top: 20px;
