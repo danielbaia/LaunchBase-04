@@ -4,16 +4,17 @@
 
 {%endblock%} {% block content %}
 <div id="wrapper">
-    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGoqBiAhyxckg/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=q2mKVGjvF2O4Z92irlJ6wE-cTy7bkGt8lh3KGMBrYPM" alt="">
-    <h1>Daniel Baia</h1>
-    <h2>User Experience Designer</h2>
-    <p>Designer apaixonado por entender e se dedicar continuamente para incorporar elementos de acessibilidade e design inclusivo. </p>
+    <img src="{{ about[0].avatar }}" alt="">
+    <h1>{{ about[0].name }}</h1>
+    <h2>{{ about[0].role }}</h2>
+    <p>{{ about[0].description }} </p>
 </div>
 
 <div id="social" class="links">
-    <a href="https://github.com/danielbaia" target="_blank">Github</a>
-    <a href="https://www.linkedin.com/in/danielbaia/" target="_blank">Linkedin</a>
-    <a href="https://twitter.com/danielbaiaaa" target="_blank">Twitter</a>
+    {% for link in about[0].links %}
+        <a href="{{ link.url }}" target="_blank">{{link.name}}</a>
+    {% endfor %}
+
 </div>
 
 {% endblock %}

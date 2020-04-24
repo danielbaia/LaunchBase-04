@@ -95,6 +95,7 @@ header div {
 .card {
     background: var(--color-rocket);
     cursor: pointer;
+    display: grid;
 }
 
 .card-image-container img {
@@ -109,6 +110,7 @@ header div {
 .card-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .info-price {

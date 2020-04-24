@@ -2,6 +2,8 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 
 const server = express();
+const videos = require("./data");
+const about = require('./about');
 
 
 server.use(express.static('public'));
@@ -14,11 +16,11 @@ nunjucks.configure('views', {
 
 
 server.get("/", function(req, res) {
-    return res.render('about');
+    return res.render('about', { about });
 })
 
 server.get("/portfolio", function(req, res) {
-    return res.render('portfolio')
+    return res.render('portfolio', { items: videos });
 })
 
 
