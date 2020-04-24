@@ -19,6 +19,11 @@ server.get('/course', function(req, res) {
     res.render("course")
 })
 
+
+server.use(function(req, res) {
+    res.status(400).render("not-found");
+})
+
 server.listen(5000, function() {
     console.log('Server is runnign!');
 })
