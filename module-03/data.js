@@ -4,7 +4,8 @@ module.exports = [
         id: "HN1UjzRSdBk",
         title: "Desvendando o CSS Grid na prática | Mayk Brito",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 
     {
@@ -18,7 +19,8 @@ module.exports = [
         id: "GykTLqODQuU",
         title: "Formulário Animado com JS e CSS | Mayk Brito",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     },
 
     {
@@ -40,6 +42,7 @@ module.exports = [
         id: "vqrjFnq3-uo",
         title: "Criando um PLayer de áudio | Mayk Brito",
         duration: "57 min",
-        price: "Free"
+        price: "Free",
+        featured: true
     }
 ]

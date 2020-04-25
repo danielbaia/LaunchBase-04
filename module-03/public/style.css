@@ -86,7 +86,6 @@ header div {
 .cards {
     max-width: 800px;
     margin: 0 auto;
-    color: var(--color-white);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -94,8 +93,13 @@ header div {
 
 .card {
     background: var(--color-rocket);
+    color: var(--color-white);
     cursor: pointer;
     display: grid;
+}
+
+.featured-wrapper.card-image-container {
+    position: relative;
 }
 
 .card-image-container img {
@@ -163,4 +167,43 @@ iframe {
     width: 100%;
     position: absolute;
     top: 5%;
+}
+
+
+/****=== FEATURED ==****/
+
+.featured {
+    background: yellow;
+    color: black;
+    padding: 3px 10px;
+    position: absolute;
+    right: 5px;
+    border-radius: 16px;
+    bottom: -8px;
+}
+
+
+/***++++ VIDEOS +++***/
+
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video h1 {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-video-container {
+    position: relative;
+    padding-top: 50%;
+}
+
+.card-video-container iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
 }
