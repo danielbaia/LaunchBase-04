@@ -1,0 +1,55 @@
+{% extends "layout.njk" %} 
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+{% endblock %} 
+
+{% block title %}
+<title>Cursos - Rocketseat</title>
+{%endblock%} 
+
+{% block content %}
+<div class="wrapper">
+    <h1>Cursos</h1>
+</div>
+
+<section class="cards-conteudos">
+
+    {% for course in courses %}
+
+        <div class="card-conteudo" id="{{course.title}}">
+            <div class="card-img">
+                <img src="{{course.url_img}}" alt="Curso Starter">
+            </div>
+            <div class="card-titulo">
+                <h2>{{course.title}}</h2>
+            </div>
+            <div class="card-info">
+                <p class="info-modulos"> {{course.module}} modulos</p>
+                <p class="info-price">{{course.price}}</p>
+            </div>
+        </div>
+
+    {% endfor %}
+   
+</section>
+
+<div class="modal-overlay">
+    <div class="modal">
+        <div class="buttons-modal">
+            <a class="maximize-modal">
+                <i class="material-icons">maximize</i>
+            </a>
+            <a class="close-modal">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+
+        <div class="modal-content">
+            <iframe src="" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+{% endblock %}
