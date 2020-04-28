@@ -190,7 +190,7 @@ header div a:hover {
     cursor: pointer;
 }
 
-iframe {
+.modal iframe {
     height: 80%;
     width: 100%;
     position: absolute;
@@ -237,4 +237,21 @@ iframe {
     animation-name: blink;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+}
+
+
+/****DESCRIPTION COURSE****/
+
+.description {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card-video {
+    padding-bottom: 50%;
+}
+
+.card-video iframe {
+    height: 100%;
+    width: 100%;
 }

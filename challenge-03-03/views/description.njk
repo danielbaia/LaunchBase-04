@@ -1,0 +1,28 @@
+{% extends "layout.njk" %} 
+
+
+{% block head %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+{% endblock %} 
+
+{% block title %}
+<title>Curso - {{course.title}}</title>
+{%endblock%} 
+
+{% block content %}
+<div class="wrapper">
+    <h1>{{course.title}}</h1>
+</div>
+
+<section class="description">
+        <div class="card">
+            <div class="card-video" id="{{course.title}}">
+                <iframe src="{{course.link}}" frameborder="0"></iframe>
+            </div>
+        </div>
+
+   
+</section>
+
+
+{% endblock %}
