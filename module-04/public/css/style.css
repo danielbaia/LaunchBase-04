@@ -7,20 +7,22 @@
 
 :root {
     --color-primary: #6200EE;
-    --color-secondary: #3700B3;
+    --color-secondary: #0984e3;
     --color-white: #FFFFFE;
     --color-green: #05D361;
+    --color-black: #252525;
 }
 
 body {
     font-family: 'Roboto';
+    background-color: var(--color-secondary);
 }
 
 
 /****HEADER***/
 
 .header {
-    background: var(--color-primary);
+    background: var(--color-white);
 }
 
 .content {
@@ -48,6 +50,7 @@ body {
     display: block;
     color: #FFF;
     margin-left: 10px;
+    color: var(--color-primary);
 }
 
 
@@ -80,7 +83,7 @@ body {
     font-size: 1.125em;
     padding: 10px;
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-black);
     position: relative;
 }
 
@@ -103,4 +106,79 @@ body {
 .header-menu ul li a:hover::after {
     width: calc(100% - 20px);
     transition: width 200ms ease-in-out 100ms;
+}
+
+
+/***CARD****/
+
+.card {
+    background-color: var(--color-white);
+    width: 800px;
+    min-height: 400px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, .4);
+    animation: up 200ms ease-out;
+}
+
+@keyframes up {
+    to {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    from {
+        opacity: 1;
+    }
+}
+
+.avatar {
+    background: url('https://source.unsplash.com/collection/8353395/300x300') no-repeat top center /cover;
+}
+
+
+/******DETAILS*****/
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 16px 0;
+}
+
+.details .item:last-child {
+    border-bottom: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: #222;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.details h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+.details .item div:nth-child(2) span {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 24px;
+    margin-top: 8px;
+    margin-right: 4px;
+    font-size: 0.75em;
 }
