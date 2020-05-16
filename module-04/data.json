@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Daniel Baia Amaral",
+      "avatar_url": "http://youtube.com",
+      "birth": 687916800000,
+      "gender": "M",
+      "services": "analista, design, teste",
+      "created_at": 1589649298483
+    },
+    {
+      "id": 2,
+      "name": "Baia",
+      "avatar_url": "http://youtube.com",
+      "birth": 637372800000,
+      "gender": "F",
+      "services": "cross, gym, run",
+      "created_at": 1589649353555
+    }
+  ]
+}
