@@ -12,11 +12,20 @@
     {
       "id": 2,
       "name": "Baia",
-      "avatar_url": "http://youtube.com",
+      "avatar_url": "http://google.com",
       "birth": 637372800000,
       "gender": "F",
       "services": "cross, gym, run",
       "created_at": 1589649353555
+    },
+    {
+      "id": 3,
+      "name": "Amaral",
+      "avatar_url": "htttp://google.com",
+      "birth": 1590796800000,
+      "gender": "M",
+      "services": "teste 1, teste 2",
+      "created_at": 1589927127911
     }
   ]
 }

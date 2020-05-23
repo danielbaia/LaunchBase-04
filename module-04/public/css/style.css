@@ -132,9 +132,12 @@ body {
     }
 }
 
+
+/*
 .avatar {
     background: url('https://source.unsplash.com/collection/8353395/300x300') no-repeat top center /cover;
 }
+*/
 
 
 /******DETAILS*****/
@@ -217,7 +220,8 @@ input[type="radio"] {
     font-size: 0.75em;
 }
 
-button[type="submit"] {
+button[type="submit"],
+a.button {
     background: var(--color-secondary);
     width: 100%;
     color: var(--color-white);
@@ -226,4 +230,10 @@ button[type="submit"] {
     margin-top: 16px;
     padding: 8px 32px;
     font-size: 1em;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
