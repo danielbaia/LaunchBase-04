@@ -21,8 +21,6 @@ exports.edit = function(req, res) {
     return res.render('instructors/edit', { instructor });
 }
 
-
-
 //SHOW
 exports.show = function(req, res) {
 
@@ -50,8 +48,6 @@ exports.show = function(req, res) {
     return res.render('instructors/show', { instructor });
 
 }
-
-
 
 //CREATE
 exports.post = function(req, res) {
@@ -92,4 +88,55 @@ exports.post = function(req, res) {
     });
 
     //return res.send(req.body);
+}
+
+//PUT
+exports.put = function(req, res) {
+
+    const { id } = req.body;
+    let index = 0;
+
+    const foundInstructor = data.instructors.find(function(instructor, foundIndex) {
+
+        if (id == instructor.id) {
+            index = foundIndex;
+            return true;
+        }
+    })
+
+    const instructor = {
+        ...foundInstructor,
+        ...req.body,
+        birth: Date.parse(req.body.birth)
+    };
+
+    data.instructors[index] = instructor;
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if (err) return res.send("Write file error...")
+
+        return res.redirect(`/instructors/${id}`);
+    });
+
+}
+
+//DELETE
+exports.delete = function(req, res) {
+
+    const { id } = req.body;
+
+    const filteredInstructor = data.instructors.filter(function(instructor) {
+        return id != instructor.id;
+    })
+
+    data.instructors = filteredInstructor;
+
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+        if (err) {
+            return res.send("Write file error...")
+        }
+
+        return res.redirect(`/instructors`);
+    });
+
 }
