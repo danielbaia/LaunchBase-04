@@ -2,6 +2,13 @@ const fs = require('fs');
 const data = require('./data');
 const { age, date } = require('./utils');
 
+
+
+//INDEX
+exports.index = function(req, res) {
+    return res.render("instructors/index", { instructors: data.instructors });
+}
+
 //EDIT
 exports.edit = function(req, res) {
 
@@ -107,6 +114,7 @@ exports.put = function(req, res) {
     const instructor = {
         ...foundInstructor,
         ...req.body,
+        id: Number(req.body.id),
         birth: Date.parse(req.body.birth)
     };
 

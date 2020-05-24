@@ -1,42 +1,36 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-    <div class="card">
-        <section class="avatar">
-        </section>
-    
-        <section class="details">
+    <div class="card table-container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Instrutor</th>
+                    <th>Atuação</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
 
-            <h3>Detalhes</h3>
+                {% for instructor in instructors %}
+                    <tr>
+                        <td>
+                        <span style="background: url('{{instructor.avatar_url}}') no-repeat top center /cover"></span>
+                        {{instructor.name}}</td>
+                        <td>{{instructor.services}}</td>
+                        <td>
+                            <a href="/instructors/{{instructor.id}}/edit">Editar</a>
+                            <a href="/instructors/{{instructor.id}}">Ver</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                
 
-            <div class="item">
-                <div>Instrutor</div>
-                <div>Daniel Amaral</div>
-            </div>
-
-            <div class="item">
-                <div>Idade</div>
-                <div>29 anos</div>
-            </div>
-
-            <div class="item">
-                <div>Sexo</div>
-                <div>Masculino</div>
-            </div>
-
-             <div class="item">
-                <div>Acompanhamento</div>
-                <div>
-                    <span>Musculação</span>
-                    <span>Crossfit</span>
-                </div>
-            </div>
-
-             <div class="item">
-                <div>Desde</div>
-                <div>Masculino</div>
-            </div>
-        </section>
+            </tbody>
+        
+        </table>
+           
 
     </div>
 {% endblock %}

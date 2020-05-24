@@ -243,3 +243,58 @@ a.button {
     border: 1px solid var(--color-secondary);
     color: var(--color-secondary);
 }
+
+
+/*TABLE_CONTAINER*/
+
+.table-container {
+    display: block;
+    padding: 40px;
+}
+
+.table-container table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-container table tr th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+th {
+    font-size: 12px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.table-container tbody tr:last-child td {
+    border: none;
+}
+
+td a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 10px;
+    background: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 4px;
+}
+
+tbody tr td:first-child {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px -4px rgba(0, 0, 0, .1);
+}
