@@ -2,6 +2,8 @@
 
 {% block content %}
     <div class="card table-container">
+
+        <a href="/instructors/create">Novo</a>
         
         <table>
             <thead>
@@ -18,7 +20,9 @@
                         <td>
                         <span style="background: url('{{instructor.avatar_url}}') no-repeat top center /cover"></span>
                         {{instructor.name}}</td>
-                        <td>{{instructor.services}}</td>
+                        <td>  
+                            {{instructor.services}} 
+                        </td>
                         <td>
                             <a href="/instructors/{{instructor.id}}/edit">Editar</a>
                             <a href="/instructors/{{instructor.id}}">Ver</a>

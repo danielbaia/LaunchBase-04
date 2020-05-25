@@ -22,6 +22,9 @@ module.exports = {
         const month = `0${birthDate.getUTCMonth() + 1}`.slice(-2);
         const day = `0${birthDate.getUTCDate()}`.slice(-2);
 
-        return `${year}-${month}-${day}`;
+        return {
+            iso: `${year}-${month}-${day}`,
+            birthDay: `${day}/${month}`
+        };
     }
 }

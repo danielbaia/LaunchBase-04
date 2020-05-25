@@ -277,13 +277,19 @@ th {
     border: none;
 }
 
-td a {
+td a,
+.table-container>a {
     display: inline-block;
     text-decoration: none;
-    padding: 4px 10px;
+    padding: 8px 16px;
     background: var(--color-secondary);
     color: var(--color-white);
     border-radius: 4px;
+}
+
+.table-container>a {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 tbody tr td:first-child {
@@ -297,4 +303,15 @@ tbody tr td:first-child span {
     height: 48px;
     border-radius: 50%;
     box-shadow: 1px 1px 1px -4px rgba(0, 0, 0, .1);
+}
+
+tbody tr td span {
+    display: inline-block;
+    padding: 8px 16px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 24px;
+    margin-top: 8px;
+    margin-right: 4px;
+    font-size: 0.75em;
 }
