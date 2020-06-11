@@ -1,0 +1,38 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="card">
+        <section class="avatar" style="background: url('{{member.avatar_url}}') no-repeat top center /cover">
+        </section>
+    
+        <section class="details" >
+            <form method="POST" action="/members?_method=PUT">
+
+                <h3>Editar Member</h3>
+
+                {% include "members/fields.njk"%}
+
+                <input type="hidden" name="id" value="{{member.id}}">
+            </form>
+            <form class="button-delete" id="button-delete"  method="post" action="/members?_method=DELETE">
+                <input type="hidden" name="id" value="{{member.id}}">
+                <button type="submit">Excluir</button>
+            </form>
+
+            <script>
+            const formDelete = document.querySelector(".button-delete");
+       
+            formDelete.addEventListener("submit", function(even){
+                const confirmation = confirm("Tem certeza que deseja excluir membro?")
+                if(!confirmation)
+                    even.preventDefault();
+            
+            });
+            </script>
+
+
+        </section>
+    </div>
+
+   
+{% endblock %}
