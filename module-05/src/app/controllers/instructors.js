@@ -1,5 +1,6 @@
 const Instructors = require('../models/Instructors');
 const { age, date } = require('../../lib/utils');
+const Members = require('../models/Members');
 
 module.exports = {
     index(req, res) {
@@ -10,7 +11,8 @@ module.exports = {
 
     },
     create(req, res) {
-        return res.render("instructors/create");
+
+        return res.render("instructors/create")
 
     },
     post(req, res) {

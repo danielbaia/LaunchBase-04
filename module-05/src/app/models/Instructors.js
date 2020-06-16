@@ -6,7 +6,16 @@ module.exports = {
 
     all(callback) {
 
-        db.query(`Select * FROM instructors ORDER by id ASC`, function(err, results) {
+
+        const query = `
+            Select instructors.*, count(members.instructor_id) as total_students
+            From instructors
+            Left Join members on (instructors.id = members.instructor_id)
+            GROUP by instructors.id
+            ORDER by total_students DESC
+        `;
+
+        db.query(query, function(err, results) {
             if (err) throw `Database error...${err}`;
 
             callback(results.rows);
